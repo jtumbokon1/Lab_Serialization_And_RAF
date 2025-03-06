@@ -13,6 +13,12 @@ namespace Lab_Serialization_And_RAF
             this.eventNumber = eventNumber;
             this.location = location;
         }
+        public override string ToString() 
+        {
+            return $"{eventNumber}\n" +
+                $"{location}\n" +
+                $"In Word: ";
+        }
     }
 
     class Program
