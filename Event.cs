@@ -31,15 +31,15 @@ namespace Lab_Serialization_And_RAF
             {
                 // read the first character
                 fs.Seek(0, SeekOrigin.Begin);
-                Console.WriteLine((char)fs.ReadByte());
+                Console.WriteLine($"The First Character is: \"{(char)fs.ReadByte()}\"");
 
                 // read the middle character
                 fs.Seek(fs.Length / 2, SeekOrigin.Begin);
-                Console.WriteLine((char)fs.ReadByte());
+                Console.WriteLine($"The Middle Character is: \"{(char)fs.ReadByte()}\"");
 
                 // read the last character
                 fs.Seek(-1, SeekOrigin.End);
-                Console.WriteLine((char)fs.ReadByte());
+                Console.WriteLine($"The Last Character is: \"{(char)fs.ReadByte()}\"");
             }
         }
 
