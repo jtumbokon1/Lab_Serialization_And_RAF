@@ -20,7 +20,7 @@ namespace Lab_Serialization_And_RAF
             // Create an Event object
             Event @event1 = new Event(1, "Calgary");
 
-            // seriliaze the object to a file called event.txt
+            // serialize the object to a file called event.txt
             JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(@event1, options);
             File.WriteAllText("event.txt", jsonString);
