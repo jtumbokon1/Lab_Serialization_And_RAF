@@ -1,0 +1,7 @@
+1
+Calgary
+Tech Competition
+In Word: Hackathon
+The First Character is: "H"
+The Middle Character is: "a"
+The Last Character is: "n"
