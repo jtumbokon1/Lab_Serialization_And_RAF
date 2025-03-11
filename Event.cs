@@ -11,12 +11,14 @@ namespace Lab_Serialization_And_RAF
         // public properties
         public int eventNumber { get; set; }
         public string location { get; set; }
+        public string eventName { get; set; }
 
         // constructor
-        public Event(int eventNumber, string location)
+        public Event(int eventNumber, string location, string eventName)
         {
             this.eventNumber = eventNumber;
             this.location = location;
+            this.eventName = eventName;
         }
 
         // public methods
@@ -47,7 +49,7 @@ namespace Lab_Serialization_And_RAF
         {
             return $"{eventNumber}\n" +
                 $"{location}\n" +
-                $"Tech Competition\n" +
+                $"{eventName}\n" +
                 $"In Word: Hackathon";
         }
     }// class

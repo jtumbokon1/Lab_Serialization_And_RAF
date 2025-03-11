@@ -18,7 +18,7 @@ namespace Lab_Serialization_And_RAF
         static void Main(string[] args)
         {
             // Create an Event object
-            Event @event1 = new Event(1, "Calgary");
+            Event @event1 = new Event(1, "Calgary", "Tech Competition");
 
             // serialize the object to a file called event.txt
             JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
